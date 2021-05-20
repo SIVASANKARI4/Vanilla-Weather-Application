@@ -46,8 +46,8 @@ li {
   margin-bottom: 20px;
 }
 .weatherapp-wrapper {
-  max-width: 600px;
   margin: 30px auto;
+  max-width: 600px;
 }
 .weatherapp {
   padding: 20px;
