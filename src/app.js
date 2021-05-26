@@ -30,6 +30,7 @@ function displayTemperature(response) {
   let humidityElement = document.querySelector("#humidity");
   let SpeedElement = document.querySelector("#windSpeed");
   let dateElement = document.querySelector("#date");
+  let iconElement = document.querySelector("#icon");
 
   cityElement.innerHTML = response.data.name;
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
@@ -37,8 +38,14 @@ function displayTemperature(response) {
   humidityElement.innerHTML = response.data.main.humidity;
   SpeedElement.innerHTML = Math.round(response.data.wind.speed);
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 let apiKey = "088d8a6c5e7273acf522248253ec0282";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Vellore&appid=${apiKey}&units=metric`;
+let city = "Vellore";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 axios.get(apiUrl).then(displayTemperature);
