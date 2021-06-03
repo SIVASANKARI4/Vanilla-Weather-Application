@@ -1,9 +1,15 @@
 body {
-  font-family: arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
-
+.weatherapp {
+  background-image: url("file:///C:/Users/gvel1/OneDrive/Documents/GitHub/Weather-Application/src/images/greenery.jpg");
+  background-size: cover;
+  height: 500px;
+  width: 700px;
+}
 h1 {
-  color: #878787;
+  color: rgb(240, 174, 210);
   font-size: 24px;
   font-weight: 100;
   line-height: 32px;
@@ -20,7 +26,7 @@ li {
   margin: 0;
   padding: 0;
 
-  color: rgb(135, 135, 135);
+  color: white;
   font-size: 16px;
   font-weight: 100;
   line-height: 25px;
@@ -33,8 +39,13 @@ li::first-letter {
   height: 64px;
   width: 64px;
 }
+.btn {
+  background-color: #8ac28c;
+  color: white;
+  border: 1px aqua solid;
+}
 .weather-temperature strong {
-  color: rgb(33, 33, 33);
+  color: white;
   font-size: 64px;
   line-height: 1;
   font-weight: 400;
@@ -42,6 +53,10 @@ li::first-letter {
 .weather-temperature .active {
   color: black;
   cursor: default;
+  text-decoration: none;
+}
+#fahrenheit-link {
+  color: black;
   text-decoration: none;
 }
 .weather-temperature .active:hover {
@@ -66,14 +81,14 @@ li::first-letter {
 }
 
 .weather-forecast {
-  margin-top: 20px;
   text-align: center;
-  color: black;
+  color: white;
+  margin-top: 50px;
 }
 
 .weather-forecast-date {
   font-size: 16px;
-  opacity: 0.6;
+  opacity: 0.9;
 }
 
 .weather-forecast-temperature {
@@ -82,4 +97,57 @@ li::first-letter {
 
 .weather-forecast-temperature.minimum {
   opacity: 0.4;
+}
+
+.res-circle {
+  /* (A) PERCENTAGE WIDTH & BORDER RADIUS */
+  width: 180px;
+  height: 150px;
+  border-radius: 50%;
+  border: aqua solid;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  text-align: center;
+
+  margin: 10px auto;
+
+  /* (B) BACKGROUND COLOR */
+  background: rebeccapurple;
+  opacity: 0.7;
+
+  /* (C) NECESSARY TO POSITION TEXT BLOCK */
+  line-height: 1em;
+}
+
+.circle-txt {
+  /* (E1) CENTER TEXT IN CIRCLE */
+
+  margin-top: 35px;
+  margin-left: 10px;
+  text-align: center;
+
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+.last {
+  text-align: center;
+  margin-top: 20px;
+  color: #5e5f61;
+}
+.square {
+  width: 50%;
+  height: 85%;
+  margin: 10px auto;
+  background: rgb(209, 139, 46);
+  opacity: 0.9;
+
+  font-style: italic;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 20%;
+  text-align: center;
+  border: aqua solid;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }

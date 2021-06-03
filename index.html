@@ -34,8 +34,8 @@
               <div class="col-3">
                 <input
                   type="submit"
-                  value="search"
-                  class="btn btn-primary w-100"
+                  value="Search"
+                  class="btn  w-100"
                 />
               </div>
             </div>
@@ -50,36 +50,44 @@
           </div>
           <div class="row">
             <div class="col-6">
+              <div class="square">
               <div class="clearfix weather-temperature">
                 <img src="" alt="Clear" id="icon" class="float-left" />
                 <div class="float-left">
                   <strong id="temperature"></strong>
                   <span class="units">
-                    <a href="#" id="celsius-link" class="active">°C</a>|
-                    <a href="#" id="fahrenheit-link">°F</a></span
+                    <a href="#" id="celsius-link" class="active">°C</a>
+                    /<a href="#" id="fahrenheit-link">°F</a></span
+                    
                   >
+                </div>
                 </div>
               </div>
             </div>
             <div class="col-6">
+              <div class="res-circle">
+                <div class="circle-txt">
               <ul>
+                <li>Feels like: <span id="Feels-Like"></span>°C</li>
                 <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Wind: <span id="windSpeed"></span> km/h</li>
+                <li>Wind Speed: <span id="windSpeed"></span> km/h</li>
               </ul>
+            </div>
             </div>
           </div>
           <div class="weather-forecast" id="forecast"></div>
         </div>
       </div>
-
+<div class="last">
       <small
-        ><a
+        >This Project was coded by Sivasankari <a
           href="https://github.com/SIVASANKARI4/Vanilla-Weather-Application"
           target="_blank"
-          >Open source code</a
-        >
-        by Sivasankari</small
+          >Open sourced on Github</a
+        > and <a href="https://vigorous-elion-54b025.netlify.app/" target="_blank"> hosted on Netlify</a>
+        </small
       >
+    </div>
     </div>
 
     <script src="src/app.js"></script>
