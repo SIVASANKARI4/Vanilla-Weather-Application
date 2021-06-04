@@ -3,7 +3,7 @@ body {
     "Lucida Sans", Arial, sans-serif;
 }
 .weatherapp {
-  background-image: url("file:///C:/Users/gvel1/OneDrive/Documents/GitHub/Weather-Application/src/images/greenery.jpg");
+  background-image: url("images/greenery.jpg");
   background-size: cover;
   height: 500px;
   width: 700px;
